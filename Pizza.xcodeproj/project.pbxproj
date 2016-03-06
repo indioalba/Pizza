@@ -12,6 +12,10 @@
 		646A2E551C8C39C1001A593B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646A2E531C8C39C1001A593B /* Main.storyboard */; };
 		646A2E571C8C39C1001A593B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646A2E561C8C39C1001A593B /* Assets.xcassets */; };
 		646A2E5A1C8C39C1001A593B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646A2E581C8C39C1001A593B /* LaunchScreen.storyboard */; };
+		646A2E621C8C3F3A001A593B /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A2E611C8C3F3A001A593B /* MasaViewController.swift */; };
+		646A2E641C8C534A001A593B /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A2E631C8C534A001A593B /* QuesoViewController.swift */; };
+		646A2E661C8C5C2E001A593B /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A2E651C8C5C2E001A593B /* IngredientesViewController.swift */; };
+		646A2E681C8C6F78001A593B /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A2E671C8C6F78001A593B /* ConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		646A2E561C8C39C1001A593B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646A2E591C8C39C1001A593B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646A2E5B1C8C39C1001A593B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646A2E611C8C3F3A001A593B /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
+		646A2E631C8C534A001A593B /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
+		646A2E651C8C5C2E001A593B /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
+		646A2E671C8C6F78001A593B /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				646A2E561C8C39C1001A593B /* Assets.xcassets */,
 				646A2E581C8C39C1001A593B /* LaunchScreen.storyboard */,
 				646A2E5B1C8C39C1001A593B /* Info.plist */,
+				646A2E611C8C3F3A001A593B /* MasaViewController.swift */,
+				646A2E631C8C534A001A593B /* QuesoViewController.swift */,
+				646A2E651C8C5C2E001A593B /* IngredientesViewController.swift */,
+				646A2E671C8C6F78001A593B /* ConfirmationViewController.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -135,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646A2E681C8C6F78001A593B /* ConfirmationViewController.swift in Sources */,
+				646A2E641C8C534A001A593B /* QuesoViewController.swift in Sources */,
+				646A2E621C8C3F3A001A593B /* MasaViewController.swift in Sources */,
+				646A2E661C8C5C2E001A593B /* IngredientesViewController.swift in Sources */,
 				646A2E521C8C39C1001A593B /* ViewController.swift in Sources */,
 				646A2E501C8C39C1001A593B /* AppDelegate.swift in Sources */,
 			);
