@@ -36,6 +36,7 @@ class IngredientesViewController: UIViewController {
     var isPimiento:BooleanType = false
     var isPina:BooleanType = false
     var isAnchoa:BooleanType = false
+    var numIngredientes = 0
     
     var ingredientesDic = ["Jamon": false, "Pepperoni": false]
     
@@ -57,6 +58,19 @@ class IngredientesViewController: UIViewController {
         especificacionesIngredientesView.text = size+">"+masa+">"+queso
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if (numIngredientes>0){
+            return true
+        }else{
+            let alertController = UIAlertController(title: "Atencion", message:
+                "Antes de continuar debe seleccionar al menos 1 ingrediente", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return false
+        }
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     let confirmationViewController = segue.destinationViewController as! ConfirmationViewController
         confirmationViewController.size = size
@@ -190,8 +204,10 @@ class IngredientesViewController: UIViewController {
         // change the color text and the background color
         if(isActive){
             sender.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Normal )
+            numIngredientes++
         }else{
             sender.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal )
+            numIngredientes--
         }
     }
     
